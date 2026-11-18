@@ -109,6 +109,13 @@ h2{font-size:clamp(34px,6vw,76px);margin-bottom:48px;max-width:16ch}
 .post strong{font:800 clamp(24px,3vw,32px)/1.1 Montserrat,Arial,sans-serif}
 .cap{font-size:16px;color:#e6e6e6;line-height:1.6;margin:10px 0 14px}
 .cap em{display:block;margin-top:12px;font-style:normal;color:#ff6b86;font-size:14px}
+.qa{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.qa li{border-top:3px solid var(--b);padding-top:16px}
+.qa h3{font-size:18px;margin-bottom:8px;color:var(--b)}
+.qa p{font-size:15px;line-height:1.55;color:#222}
+#quick{padding:70px 5vw}
+.bg .pn{background:rgba(0,0,0,.45)}
+.bg .pn li b{color:#fff;min-width:80px}
 .ps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
 .ps li{counter-increment:s;border-top:3px solid var(--b);padding-top:18px}
 .ps li::before{content:"0" counter(s);display:block;font:800 36px Montserrat,Arial,sans-serif;color:var(--b);margin-bottom:8px}
@@ -155,7 +162,8 @@ footer{background:var(--b);color:#f1dfe3;padding:26px 5vw;font-size:14px}
  body{font-size:16px}
  section{padding:84px 6vw}
  .hero{padding:110px 6vw 48px}
- .ab,.cw,.grid,.sm,.ps,.pn.wide{grid-template-columns:1fr}
+ .ab,.cw,.grid,.sm,.ps,.qa,.pn.wide{grid-template-columns:1fr}
+ #quick{padding:56px 6vw}
  .post{max-width:320px}
  .ab{gap:40px}
  .ph{max-width:300px;box-shadow:10px 10px 0 var(--b)}
@@ -185,7 +193,7 @@ footer{background:var(--b);color:#f1dfe3;padding:26px 5vw;font-size:14px}
 <div class="prog" id="prog"></div>
 <nav>
  <a class="logo" href="#top">Jamil Hassan</a>
- <div><a href="#about">About</a><a href="#services">Services</a><a href="#work">Samples</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+ <div><a href="#about">About</a><a href="#services">Services</a><a href="#work">Samples</a><a href="#demo">Demo</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
 </nav>
 
 <header class="hero dk" id="top">
@@ -201,6 +209,17 @@ footer{background:var(--b);color:#f1dfe3;padding:26px 5vw;font-size:14px}
   <a class="btn" href="#work">See my sample work</a>
  </div>
 </header>
+
+<section class="lt" id="quick">
+ <div class="wrap">
+  <ul class="qa">
+   <li class="rv"><h3>Who I am</h3><p>Jamil Hassan, a digital marketer from Dhaka who works with hotels and resorts.</p></li>
+   <li class="rv"><h3>What I do</h3><p>Social media on Facebook, Instagram, LinkedIn and X, content ideas, review replies and website improvement.</p></li>
+   <li class="rv"><h3>How it helps your hotel</h3><p>More visibility, more direct enquiries and a steady, professional online presence while your team focuses on guests.</p></li>
+   <li class="rv"><h3>Why choose me</h3><p>I research your hotel and your competitors first, then give you a plan made for your property, not a template.</p></li>
+  </ul>
+ </div>
+</section>
 
 <div class="mq" aria-hidden="true"><div id="mq1"></div></div>
 
@@ -294,11 +313,44 @@ footer{background:var(--b);color:#f1dfe3;padding:26px 5vw;font-size:14px}
  </div>
 </section>
 
+<section class="bg" id="demo">
+ <div class="wrap">
+  <h2 class="rv">Demo campaign: island resort</h2>
+  <div class="sm">
+   <div class="pn rv" data-d="l">
+    <span class="lb">Demo only, not a client</span>
+    <h3>The plan</h3>
+    <ul>
+     <li><b>Hotel</b><span>A fictional 40-villa island resort in the Maldives</span></li>
+     <li><b>Goal</b><span>More direct enquiries from couples and honeymoon travellers</span></li>
+     <li><b>Instagram</b><span>Visual stories of the island, villas and food</span></li>
+     <li><b>Facebook</b><span>Offers, messages and review replies</span></li>
+     <li><b>LinkedIn</b><span>Events, weddings and travel partners</span></li>
+     <li><b>X</b><span>Quick updates and guest care</span></li>
+    </ul>
+    <p class="ft">I would track reach, profile visits, messages and booking enquiries.</p>
+   </div>
+   <div class="pn rv" data-d="r">
+    <span class="lb">Demo only, not a client</span>
+    <h3>The first 4 weeks</h3>
+    <ul>
+     <li><b>Week 1</b><span>Set up: fresh bio, highlights and a clear booking link</span></li>
+     <li><b>Week 2</b><span>Story: sunrise and villa reels, three posts and daily stories</span></li>
+     <li><b>Week 3</b><span>Trust: guest moments, team stories, replies to every review</span></li>
+     <li><b>Week 4</b><span>Offer: a seasonal package post, then review what worked</span></li>
+    </ul>
+    <p class="ft">A demo of how I work. A real campaign uses your hotel’s own details.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
 <div class="mq wh" aria-hidden="true"><div id="mq2"></div></div>
 
 <section class="lt" id="reviews">
  <div class="wrap">
   <h2 class="rv">What people say about me</h2>
+  <p class="note rv" style="margin:-24px 0 24px;max-width:60ch">These reviews are about my service and conduct. Marketing testimonials will be added as projects grow.</p>
   <article class="cw rv" data-d="l">
    <figure class="shot"><small>Google review screenshot</small><img src="https://raw.githubusercontent.com/jamil478/My-sobi-/refs/heads/main/Screenshot_20261117_234652_Maps.png" alt="Google review for Mount Lofty House Adults Retreat" loading="lazy" onerror="this.style.display='none'"></figure>
    <div>
@@ -334,6 +386,7 @@ footer{background:var(--b);color:#f1dfe3;padding:26px 5vw;font-size:14px}
 <section class="dk" id="contact">
  <div class="wrap">
   <h2 class="rv">Let’s talk about your hotel</h2>
+  <p class="rv" style="max-width:46ch;margin:-24px 0 28px;color:#e6e6e6">Send me your hotel’s name. I’ll study your online presence and send a short proposal made for your property.</p>
   <div class="rv">
    <a class="btn fill" href="https://wa.me/8801616700055?text=Hi%20Jamil%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">Message me on WhatsApp</a>
    <a class="btn" href="mailto:Jamilhassanxny@gmail.com">Send an email</a>
@@ -369,10 +422,9 @@ footer{background:var(--b);color:#f1dfe3;padding:26px 5vw;font-size:14px}
  var fw=all('#fl span');
 
  function count(el){
-  var n=+el.dataset.n,t0=null;
-  el.textContent='0';
-  function step(t){t0=t0||t;var p=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p>=1)el.textContent=n;else requestAnimationFrame(step)}
-  requestAnimationFrame(step);
+  var n=+el.dataset.n,t0=Date.now();
+  var iv=setInterval(function(){var p=Math.min((Date.now()-t0)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p>=1)clearInterval(iv)},40);
+  setTimeout(function(){clearInterval(iv);el.textContent=n},1500);
  }
  var io=new IntersectionObserver(function(es){
   es.forEach(function(e){
